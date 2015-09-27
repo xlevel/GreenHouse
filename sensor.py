@@ -6,4 +6,4 @@ def read(config):
 
 	humidity, temperature = Adafruit_DHT.read_retry(config.sensor, config.pin)
 
-	return (gmtime(), humidity, temperature)
+	return (gmtime(), temperature, humidity)
